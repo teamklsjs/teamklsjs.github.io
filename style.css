@@ -500,78 +500,16 @@ body{
 
 
 
-@media(max-width: 991px)
+@media only screen and (max-width: 768px)
 {
 
-  .body{
-    width: auto;
-  }
-
-  .toggle{
-    max-width: 100%;
-    position: fixed;
-    top: 35px;
-    right: 60px;
-    width: 30px;
-    height: 30px;
-    background-size: 20px;
-
-
-  }
-
-  
-  section{
-    min-height: 100vh;
-    padding: 40px;
-    
-  }
-
-  .sidebar{
-    width: 80px;
-    height: 60%
-  }
-
-  
-
-  .below h4{
-    font-size: 40px;
-    bottom: 50%;
-    padding: 40px;
-    
-  }
-
-  .below p{
-    font-size: 18px;
-    margin-left:auto;
-    margin-right: auto;
-    height: 30%;
-    
-    
-  }
-
-  .belower h4{
-    font-size: 40px;
-    bottom: 50%;
-    padding: 40px;
-    
-  }
-  .belower p{
-    font-size: 18px;
-    margin-left:auto;
-    margin-right: auto;
-    height: 30%;
-    
-    
-  }
-
-  .last h4{
-    font-size: 40px;
-    bottom: 50%;
-    padding: 40px;
-    
+  .wrapper{
+    width: 600px;
+    margin: 0 auto;
   }
   
 
   
   
 }
+
