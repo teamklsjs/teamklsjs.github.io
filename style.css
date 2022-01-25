@@ -503,7 +503,9 @@ body{
 @media(max-width: 991px)
 {
 
-
+  .body{
+    width: auto;
+  }
 
   .toggle{
     max-width: 100%;
