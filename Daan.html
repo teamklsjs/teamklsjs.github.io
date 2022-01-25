@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    <div class="wrapper">
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <div class="buttonup" onclick="toggleUp();"></div>
+        <div class="buttondown" onclick="toggleDown();"></div>
+        <div class="buttonup2" onclick="toggleUp2();"></div>
+        <div class="buttondown2" onclick="toggleDown2();"></div>
+        <div class="buttonup3" onclick="toggleUp3();"></div>
+        <div class="buttondown3" onclick="toggleDown3();"></div>
+    
+
+        <div class="intro">
+
+            <img src="smile.png" alt="icon">
+            
+
+           
+            <h4>Daan Klaassen</h4>
+            
+        </div>
+    
+    
+
+
+    
+
+    
+
+        <div class="sidebar">
+            <ul class="menu">
+                <li><a href="Daan.html">Daan</a></li>
+                <li><a href="index2.html">Milan</a></li>
+                <li><a href="index3.html">Damian</a></li>
+                <li><a href="index4.html">Myrthe</a></li>
+                <li><a href="index5.html">Shella</a></li>
+            </ul>
+        </div>
+
+    
+    
+        <section class="page2">
+            <div class="below">
+                <h4>OVER MIJ</h4>
+                <p>Ik ben Daan Klaassen, een 17-jarige student. Ik zit nu in mijn eerste jaar van de Software Development opleiding.  Ik hoop later in de game development te gaan werken. Maar alles in de IT lijkt mij wel leuk. </p>
+
+            </div>
+        </section>
+
+        <section class="page3">
+            <div class="belower">
+                <h4>ERVARING</h4>
+                <p>Ik ben nog bezig met deze opleiding, maar ik heb wel een paar dingen gemaakt ondertussen. Ik heb bijvoorbeeld dit project gedaan. Maar ik heb ook meegedaan met een gamejam en deze game gemaakt! </p>
+                <a href="https://arcade.makecode.com/64058-59168-30035-09089"><img src="game.png" alt="frio"></a>
+                
+            </div>
+        </section>
+
+        <section class="page4">
+            <div class="last">
+                <h4>CONTACT</h4>
+                <p>School Email: dklaassen@roc-dev.com
+                   Main Email: daankla@gmail.com
+                </p>
+            </div>
+        </section>
+
+    
+
+        <script>
+            function toggleMenu(){
+                const menutoggle = document.querySelector('.toggle');
+                menutoggle.classList.toggle('active');
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.classList.toggle('active');
+            
+            }
+
+            function toggleDown(){
+                const downtoggle = document.querySelector('.intro');
+                downtoggle.classList.toggle('down');
+                const page2down = document.querySelector('.below');
+                page2down.classList.toggle('down');
+                const bttndown = document.querySelector('.buttonup');
+                bttndown.classList.toggle('down');
+                const bttn2down = document.querySelector('.buttondown');
+                bttn2down.classList.toggle('down');
+                const bttn4 = document.querySelector('.buttonup2');
+                bttn4.classList.toggle('up');
+                const uptoggle = document.querySelector('.intro');
+                uptoggle.classList.toggle('up');
+                const page2 = document.querySelector('.below');
+                page2.classList.toggle('up');
+                const bttn = document.querySelector('.buttonup');
+                bttn.classList.toggle('up');
+                const bttn2 = document.querySelector('.buttondown');
+                bttn2.classList.toggle('up');
+            
+            
+            
+            }
+
+            function toggleUp(){
+                const uptoggle = document.querySelector('.intro');
+                uptoggle.classList.toggle('up');
+                const page2 = document.querySelector('.below');
+                page2.classList.toggle('up');
+                const bttn = document.querySelector('.buttonup');
+                bttn.classList.toggle('up');
+                const bttn2 = document.querySelector('.buttondown');
+                bttn2.classList.toggle('up');
+                const bttn4 = document.querySelector('.buttonup2');
+                bttn4.classList.toggle('up');
+                if(bttn.classList.contains('down')){
+                    const downtoggle = document.querySelector('.intro');
+                    downtoggle.classList.toggle('down');
+                    const page2down = document.querySelector('.below');
+                    page2down.classList.toggle('down');
+                    const bttndown = document.querySelector('.buttonup');
+                    bttndown.classList.toggle('down');
+                    const bttn2down = document.querySelector('.buttondown');
+                    bttn2down.classList.toggle('down');
+                }
+            }
+
+            function toggleUp2(){
+                const uptoggles = document.querySelector('.below');
+                uptoggles.classList.toggle('up2');
+                const bttn3 = document.querySelector('.buttondown');
+                bttn3.classList.toggle('up2');
+                const bttn4 = document.querySelector('.buttonup2');
+                bttn4.classList.toggle('up2');
+                const belowertoggle = document.querySelector('.belower');
+                belowertoggle.classList.toggle('up');
+                const bttn5 = document.querySelector('.buttondown2');
+                bttn5.classList.toggle('up');
+                const bttn6 = document.querySelector('.buttonup3');
+                bttn6.classList.toggle('up');
+                if(bttn3.classList.contains('up')){
+                    const downtoggle = document.querySelector('.below');
+                    downtoggle.classList.toggle('up');
+                    const page2down = document.querySelector('.buttondown');
+                    page2down.classList.toggle('up');
+                    const bttndown = document.querySelector('.buttonup2');
+                    bttndown.classList.toggle('up');
+                }
+            }
+
+            function toggleDown2(){
+                const bttn4 = document.querySelector('.buttonup2');
+                bttn4.classList.toggle('up2');
+                bttn4.classList.toggle('up');
+                const bttn2 = document.querySelector('.buttondown');
+                bttn2.classList.toggle('up2');
+                bttn2.classList.toggle('up');
+                const blw = document.querySelector('.below');
+                blw.classList.toggle('up2');
+                blw.classList.toggle('up');
+                const belowertoggle = document.querySelector('.belower');
+                belowertoggle.classList.toggle('up');
+                const bttn5 = document.querySelector('.buttondown2');
+                bttn5.classList.toggle('up');
+                const bttn6 = document.querySelector('.buttonup3');
+                bttn6.classList.toggle('up');
+            }
+
+            function toggleUp3(){
+                const uptoggles = document.querySelector('.belower');
+                uptoggles.classList.toggle('up');
+                uptoggles.classList.toggle('up2');
+                const belowertoggle = document.querySelector('.last');
+                belowertoggle.classList.toggle('up');
+                const bttn5 = document.querySelector('.buttondown2');
+                bttn5.classList.toggle('up2');
+                bttn5.classList.toggle('up');
+                const bttn6 = document.querySelector('.buttonup3');
+                bttn6.classList.toggle('up2');
+                bttn6.classList.toggle('up');
+                const bttn8 = document.querySelector('.buttondown3');
+                bttn8.classList.toggle('up');
+            
+            }
+
+            function toggleDown3(){
+                const bttn2 = document.querySelector('.buttondown3');
+                bttn2.classList.toggle('up');
+                const bttn3 = document.querySelector('.last');
+                bttn3.classList.toggle('up');
+                const bttn4 = document.querySelector('.buttonup3');
+                bttn4.classList.toggle('up2');
+                bttn4.classList.toggle('up');
+                const bttn6 = document.querySelector('.buttondown2');
+                bttn6.classList.toggle('up2');
+                bttn6.classList.toggle('up');
+                const bttn5 = document.querySelector('.belower');
+                bttn5.classList.toggle('up2');
+                bttn5.classList.toggle('up');
+            }
+            
+
+            
+
+        
+
+        
+
+        
+        
+            
+        </script>
+    </div>
+    
+</body>
+
+</html>

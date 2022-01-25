@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="toggle" onclick="toggleMenu();"></div>
+
+    <script>
+        function toggleMenu(){
+            const menutoggle = document.querySelector('.toggle');
+            const sidebar = document.querySelector('.sidebar');
+            menutoggle.classList.toggle('active');
+            sidebar.classList.toggle('active');
+            }
+            
+    </script>
+
+    <div class="sidebar">
+        <ul class="menu">
+            <li><a href="index.html">Daan</a></li>
+            <li><a href="index2.html">Milan</a></li>
+            <li><a href="index3.html">Damian</a></li>
+            <li><a href="index4.html">Myrthe</a></li>
+            <li><a href="index5.html">Shella</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleMenu(){
+            const menutoggle = document.querySelector('.toggle');
+            menutoggle.classList.toggle('active');
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.classList.toggle('active');
+            }
+            
+    </script>
+</body>
+
+</html>

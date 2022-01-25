@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <div class="buttonup" onclick="toggleUp();"></div>
+        <div class="buttondown" onclick="toggleDown();"></div>
+        
+    
+
+        <section class="intro">
+            <div class="iconstart">
+                <img src="logonew.png" alt="icon">
+            </div>
+
+            <div class="textstuff">
+                <h4>Gemaakt door KLSJS</h4>
+            </div>
+        </section>
+    
+    
+
+
+    
+
+    
+
+        <div class="sidebar">
+            <ul class="menu">
+                <li><a href="Daan.html">Daan</a></li>
+                <li><a href="index2.html">Milan</a></li>
+                <li><a href="index3.html">Damian</a></li>
+                <li><a href="index4.html">Myrthe</a></li>
+                <li><a href="index5.html">Shella</a></li>
+            </ul>
+        </div>
+
+    
+    
+        <section class="page2">
+            <div class="below">
+                <h4>PORTFOLIO'S</h4>
+                <ul>
+                    <li><a href="Daan.html">Daan</a></li>
+                    <li><a href="index2.html">Milan</a></li>
+                    <li><a href="index3.html">Damian</a></li>
+                    <li><a href="index4.html">Myrthe</a></li>
+                    <li><a href="index5.html">Shella</a></li>
+                </ul>
+
+            </div>
+        </section>
+
+        
+
+    
+
+        <script>
+            function toggleMenu(){
+                const menutoggle = document.querySelector('.toggle');
+                menutoggle.classList.toggle('active');
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.classList.toggle('active');
+            
+            }
+
+        
+
+            function toggleDown(){
+                const downtoggle = document.querySelector('.intro');
+                downtoggle.classList.toggle('down');
+                const page2down = document.querySelector('.below');
+                page2down.classList.toggle('down');
+                const bttndown = document.querySelector('.buttonup');
+                bttndown.classList.toggle('down');
+                const bttn2down = document.querySelector('.buttondown');
+                bttn2down.classList.toggle('down');
+                const uptoggle = document.querySelector('.intro');
+                uptoggle.classList.toggle('up');
+                const page2 = document.querySelector('.below');
+                page2.classList.toggle('up');
+                const bttn = document.querySelector('.buttonup');
+                bttn.classList.toggle('up');
+                const bttn2 = document.querySelector('.buttondown');
+                bttn2.classList.toggle('up');
+            
+            
+            
+            }
+
+            function toggleUp(){
+                const uptoggle = document.querySelector('.intro');
+                uptoggle.classList.toggle('up');
+                const page2 = document.querySelector('.below');
+                page2.classList.toggle('up');
+                const bttn = document.querySelector('.buttonup');
+                bttn.classList.toggle('up');
+                const bttn2 = document.querySelector('.buttondown');
+                bttn2.classList.toggle('up');
+                if(bttn.classList.contains('down')){
+                    const downtoggle = document.querySelector('.intro');
+                    downtoggle.classList.toggle('down');
+                    const page2down = document.querySelector('.below');
+                    page2down.classList.toggle('down');
+                    const bttndown = document.querySelector('.buttonup');
+                    bttndown.classList.toggle('down');
+                    const bttn2down = document.querySelector('.buttondown');
+                    bttn2down.classList.toggle('down');
+                }
+            }
+
+            
+
+            
+            
+
+            
+
+        
+
+        
+
+        
+        
+            
+        </script>
+    </div>
+</body>
+
+</html>
