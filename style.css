@@ -503,9 +503,21 @@ body{
 @media(max-width: 991px)
 {
 
-  body{
-    background-size: cover;
+
+
+  .toggle{
+    max-width: 100%;
+    position: fixed;
+    top: 35px;
+    right: 60px;
+    width: 30px;
+    height: 30px;
+    background-size: 20px;
+
+
   }
+
+  
   section{
     min-height: 100vh;
     padding: 40px;
