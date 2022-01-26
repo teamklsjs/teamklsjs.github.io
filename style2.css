@@ -503,17 +503,17 @@ body{
 {
 
   .wrapper{
-    width: 600px;
+    width: 400px;
     margin: 0 auto;
   }
 
 
   * h4{
-    font-size: 2em;
+    font-size: 1em;
   }
 
   * p{
-    font-size: 0.5cm;
+    font-size: 0.3cm;
   }
   
 
