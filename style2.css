@@ -503,11 +503,13 @@ body{
 {
 
   .wrapper{
-    width: 400px;
+    width: 600px;
     margin: 0 auto;
   }
 
-
+  .sidebar{
+    height: 80%;
+  }
   * h4{
     font-size: 1em;
   }
@@ -522,17 +524,24 @@ body{
   }
 
   .intro img{
-    left: 23%;
+    left: 24%;
+    width: 50%;
+    height: auto;
   }
 
   .intro h4{
     margin-top: 5%;
+    font-size: 2.6em;
+    left: 2%;
   }
   
   .below h4{
-    font-size: 0.7em;
-    margin-top: 6%;
+    font-size: 0.5em;
+    margin-top: 15%;
     
+  }
+  .below li{
+    font-size: 1.5cm;
   }
   
 }

@@ -502,9 +502,11 @@ body{
 {
 
   .wrapper{
-    width: 400px;
+    width: 600px;
     margin: 0 auto;
   }
+
+
 
 
   * h4{
@@ -516,16 +518,31 @@ body{
   }
   
   .intro{
-    left: 25%;
+    left: 47%;
+    margin-top: 15%;
 
+  }
+
+  .sidebar{
+    height: 60%;
+  }
+
+  .toggle{
+    margin-right: -10%;
+    margin-top: -5%;
   }
 
   .intro img{
-    left: 23%;
+    
+    width: 25%;
+    height: auto;
+    margin-left: 4%;
   }
 
   .intro h4{
-    margin-top: 5%;
+    margin-top: 1%;
+    font-size: 2.5em;
+    margin-left: 6%;
   }
   
   
@@ -536,6 +553,7 @@ body{
   }
   .below p{
     max-width: 90%;
+    font-size: 0.6cm;
   }
   
   .belower h4{
@@ -543,14 +561,16 @@ body{
     margin-top: 6%;
   }
   .belower p{
-   max-width: 90%;
+   max-width: 95%;
    margin-top: -5%;
    margin-bottom: -3%;
+   font-size: 0.6cm;
   }
 
   .belower img{
     margin-top: -25%;
     width: 140px;
+    margin-left: 55%;
   }
 
   .last h4{
@@ -559,7 +579,7 @@ body{
   }
 
   .last p{
-    font-size: 1cm;
+    font-size: 0.7cm;
   }
 }
 
