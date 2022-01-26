@@ -498,5 +498,68 @@ body{
   top:4%;
 }
 
+@media only screen and (max-width: 480px)
+{
 
+  .wrapper{
+    width: 400px;
+    margin: 0 auto;
+  }
+
+
+  * h4{
+    font-size: 1em;
+  }
+
+  * p{
+    font-size: 0.3cm;
+  }
+  
+  .intro{
+    left: 25%;
+
+  }
+
+  .intro img{
+    left: 23%;
+  }
+
+  .intro h4{
+    margin-top: 5%;
+  }
+  
+  
+  .below h4{
+    font-size: 0.7em;
+    margin-top: 6%;
+    
+  }
+  .below p{
+    max-width: 90%;
+  }
+  
+  .belower h4{
+    font-size: 0.7em;
+    margin-top: 6%;
+  }
+  .belower p{
+   max-width: 90%;
+   margin-top: -5%;
+   margin-bottom: -3%;
+  }
+
+  .belower img{
+    margin-top: -25%;
+    width: 140px;
+  }
+
+  .last h4{
+    font-size: 0.7em;
+    margin-top: 6%;
+  }
+
+  .last p{
+    font-size: 1cm;
+  }
+}
 

@@ -516,8 +516,24 @@ body{
     font-size: 0.3cm;
   }
   
+  .intro{
+    left: 60%;
 
+  }
+
+  .intro img{
+    left: 23%;
+  }
+
+  .intro h4{
+    margin-top: 5%;
+  }
   
+  .below h4{
+    font-size: 0.7em;
+    margin-top: 6%;
+    
+  }
   
 }
 
