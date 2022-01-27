@@ -2,42 +2,228 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylemyrthe.css">
 </head>
 <body>
-    <div class="toggle" onclick="toggleMenu();"></div>
+    <div>
+    <div class="wrapper">
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <div class="buttonup" onclick="toggleUp();"></div>
+        <div class="buttondown" onclick="toggleDown();"></div>
+        <div class="buttonup2" onclick="toggleUp2();"></div>
+        <div class="buttondown2" onclick="toggleDown2();"></div>
+        <div class="buttonup3" onclick="toggleUp3();"></div>
+        <div class="buttondown3" onclick="toggleDown3();"></div>
+    
 
-    <script>
-        function toggleMenu(){
-            const menutoggle = document.querySelector('.toggle');
-            const sidebar = document.querySelector('.sidebar');
-            menutoggle.classList.toggle('active');
-            sidebar.classList.toggle('active');
+        <div class="intro">
+
+            <img src="myrthe.jpg" alt="icon">
+            
+
+           
+            <h4>Myrthe Sierksma</h4>
+            
+        </div>
+    
+    
+
+
+    
+
+    
+
+        <div class="sidebar">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Daan.html">Daan</a></li>
+                <li><a href="index2.html">Milan</a></li>
+                <li><a href="index3.html">Damian</a></li>
+                <li><a href="index4.html">Myrthe</a></li>
+                <li><a href="index5.html">Sheila</a></li>
+            </ul>
+        </div>
+
+    
+    
+        <section class="page2">
+            <div class="below">
+                <h4>OVER MIJ</h4>
+                <p>Ik ben Myrthe Sierksma en ik ben 16 jaar oud. Ik zit op de opleiding Media en Vormgeving op het ROC van Flevoland. Ik zit in het eerste jaar van deze opleiding, nadat ik een tl-diploma heb gehaald op het Aeres VMBO in Almere. Ik heb het erg naar mijn zin op het ROC. Ik heb al veel geleerd over de verschillende grafische programma's die ik steeds beter leer te gebruiken. Het vak van grafisch vormgever spreekt me aan omdat ik hiermee mijn creativiteit en het samenwerken met anderen kan combineren. Het lijkt me ontzettend leuk om voor bedrijven grafische ontwerpen of ideeën te bedenken en uit te voeren. En ook het maken van illustraties lijkt me heel erg leuk.  <br>
+
+                    Ondanks het feit dat ik nog niet zoveel ervaring heb met de grafische programma's pak ik het heel snel op. Ik vind het vak ook echt heel erg leuk. In dit schooljaar heb ik al veel gemaakt, zoals de voorpagina van een magazine, een logo, patronen, een huisstijl en flyers. </p>
+
+            </div>
+        </section>
+
+        <section class="page3">
+            <div class="belower">
+                <h4>ERVARING</h4>
+                <p>Ik kan goed samenwerken met anderen en vind dat ook belangrijk omdat je dan ook andere ideeën hoort en feedback krijgt op je werk. <br> 
+
+                    Omdat ik het heel erg leuk vind om creatief bezig te zijn volg ik in mijn vrije tijd lessen op het jongerenatelier van het KAF in Almere Stad. Daar leer ik verschillende technieken van tekenen en schilderen.  </p>
+                <img src="voorbeeld.png" alt="voorbeeld">
+                
+            </div>
+        </section>
+
+        <section class="page4">
+            <div class="last">
+                <h4>CONTACT</h4>
+                <p>School Email: 2152986@talnet.nl <br>
+                   Main Email: myrthesierksma@gmail.com
+                   Nummer: 
+                   0642894482
+                </p>
+            </div>
+        </section>
+
+    
+
+        <script>
+            function toggleMenu(){
+                const menutoggle = document.querySelector('.toggle');
+                menutoggle.classList.toggle('active');
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.classList.toggle('active');
+            
+            }
+
+            function toggleDown(){
+                const downtoggle = document.querySelector('.intro');
+                downtoggle.classList.toggle('down');
+                const page2down = document.querySelector('.below');
+                page2down.classList.toggle('down');
+                const bttndown = document.querySelector('.buttonup');
+                bttndown.classList.toggle('down');
+                const bttn2down = document.querySelector('.buttondown');
+                bttn2down.classList.toggle('down');
+                const bttn4 = document.querySelector('.buttonup2');
+                bttn4.classList.toggle('up');
+                const uptoggle = document.querySelector('.intro');
+                uptoggle.classList.toggle('up');
+                const page2 = document.querySelector('.below');
+                page2.classList.toggle('up');
+                const bttn = document.querySelector('.buttonup');
+                bttn.classList.toggle('up');
+                const bttn2 = document.querySelector('.buttondown');
+                bttn2.classList.toggle('up');
+            
+            
+            
+            }
+
+            function toggleUp(){
+                const uptoggle = document.querySelector('.intro');
+                uptoggle.classList.toggle('up');
+                const page2 = document.querySelector('.below');
+                page2.classList.toggle('up');
+                const bttn = document.querySelector('.buttonup');
+                bttn.classList.toggle('up');
+                const bttn2 = document.querySelector('.buttondown');
+                bttn2.classList.toggle('up');
+                const bttn4 = document.querySelector('.buttonup2');
+                bttn4.classList.toggle('up');
+                if(bttn.classList.contains('down')){
+                    const downtoggle = document.querySelector('.intro');
+                    downtoggle.classList.toggle('down');
+                    const page2down = document.querySelector('.below');
+                    page2down.classList.toggle('down');
+                    const bttndown = document.querySelector('.buttonup');
+                    bttndown.classList.toggle('down');
+                    const bttn2down = document.querySelector('.buttondown');
+                    bttn2down.classList.toggle('down');
+                }
+            }
+
+            function toggleUp2(){
+                const uptoggles = document.querySelector('.below');
+                uptoggles.classList.toggle('up2');
+                const bttn3 = document.querySelector('.buttondown');
+                bttn3.classList.toggle('up2');
+                const bttn4 = document.querySelector('.buttonup2');
+                bttn4.classList.toggle('up2');
+                const belowertoggle = document.querySelector('.belower');
+                belowertoggle.classList.toggle('up');
+                const bttn5 = document.querySelector('.buttondown2');
+                bttn5.classList.toggle('up');
+                const bttn6 = document.querySelector('.buttonup3');
+                bttn6.classList.toggle('up');
+                if(bttn3.classList.contains('up')){
+                    const downtoggle = document.querySelector('.below');
+                    downtoggle.classList.toggle('up');
+                    const page2down = document.querySelector('.buttondown');
+                    page2down.classList.toggle('up');
+                    const bttndown = document.querySelector('.buttonup2');
+                    bttndown.classList.toggle('up');
+                }
+            }
+
+            function toggleDown2(){
+                const bttn4 = document.querySelector('.buttonup2');
+                bttn4.classList.toggle('up2');
+                bttn4.classList.toggle('up');
+                const bttn2 = document.querySelector('.buttondown');
+                bttn2.classList.toggle('up2');
+                bttn2.classList.toggle('up');
+                const blw = document.querySelector('.below');
+                blw.classList.toggle('up2');
+                blw.classList.toggle('up');
+                const belowertoggle = document.querySelector('.belower');
+                belowertoggle.classList.toggle('up');
+                const bttn5 = document.querySelector('.buttondown2');
+                bttn5.classList.toggle('up');
+                const bttn6 = document.querySelector('.buttonup3');
+                bttn6.classList.toggle('up');
+            }
+
+            function toggleUp3(){
+                const uptoggles = document.querySelector('.belower');
+                uptoggles.classList.toggle('up');
+                uptoggles.classList.toggle('up2');
+                const belowertoggle = document.querySelector('.last');
+                belowertoggle.classList.toggle('up');
+                const bttn5 = document.querySelector('.buttondown2');
+                bttn5.classList.toggle('up2');
+                bttn5.classList.toggle('up');
+                const bttn6 = document.querySelector('.buttonup3');
+                bttn6.classList.toggle('up2');
+                bttn6.classList.toggle('up');
+                const bttn8 = document.querySelector('.buttondown3');
+                bttn8.classList.toggle('up');
+            
+            }
+
+            function toggleDown3(){
+                const bttn2 = document.querySelector('.buttondown3');
+                bttn2.classList.toggle('up');
+                const bttn3 = document.querySelector('.last');
+                bttn3.classList.toggle('up');
+                const bttn4 = document.querySelector('.buttonup3');
+                bttn4.classList.toggle('up2');
+                bttn4.classList.toggle('up');
+                const bttn6 = document.querySelector('.buttondown2');
+                bttn6.classList.toggle('up2');
+                bttn6.classList.toggle('up');
+                const bttn5 = document.querySelector('.belower');
+                bttn5.classList.toggle('up2');
+                bttn5.classList.toggle('up');
             }
             
-    </script>
 
-    <div class="sidebar">
-        <ul class="menu">
-            <li><a href="index.html">Daan</a></li>
-            <li><a href="index2.html">Milan</a></li>
-            <li><a href="index3.html">Damian</a></li>
-            <li><a href="index4.html">Myrthe</a></li>
-            <li><a href="index5.html">Shella</a></li>
-        </ul>
+            
+
+        
+
+        
+
+        
+        
+            
+        </script>
     </div>
-
-    <script>
-        function toggleMenu(){
-            const menutoggle = document.querySelector('.toggle');
-            menutoggle.classList.toggle('active');
-            const sidebar = document.querySelector('.sidebar');
-            sidebar.classList.toggle('active');
-            }
-            
-    </script>
+    
 </body>
 
 </html>

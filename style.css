@@ -1,7 +1,8 @@
 
 body{
-  background: rgb(34,193,195);
+  background: rgb(202, 106, 27);
   overflow: -moz-hidden-unscrollable;
+  
 }
 
 
@@ -61,11 +62,14 @@ body{
 }
 
 .intro img{
-  width:auto;
-  height: 210px;
+  width: 250px;
+  height: 250px;
   background: white;
   border-radius: 50%;
   max-width: 100%;
+  object-fit: cover;
+  
+  
   
 }
 
@@ -105,7 +109,7 @@ body{
   margin-left: auto;
   margin-right: auto;
   max-width: 520px;
-  font-size: 0.8cm;
+  font-size: 0.6cm;
   text-align: center;
 }
 
@@ -248,7 +252,7 @@ body{
   top:0;
   right: 0px;
   width: 100px;
-  height: 40%;
+  height: 44%;
   transition: 0.5s;
   padding: 40px;
   z-index: 100;
@@ -337,8 +341,8 @@ body{
 .belower p{
   margin-left: auto;
   margin-right: auto;
-  max-width: 520px;
-  font-size: 0.8cm;
+  max-width: 800px;
+  font-size: 0.6cm;
   text-align: center;
   padding-bottom: 40px;
 }
@@ -534,9 +538,12 @@ body{
 
   .intro img{
     
-    width: 25%;
-    height: auto;
+    width: 170px;
+    height: 170px;
     margin-left: 4%;
+    border-radius: 50%;
+    max-width: 100%;
+    object-fit: cover;
   }
 
   .intro h4{
@@ -558,19 +565,19 @@ body{
   
   .belower h4{
     font-size: 0.7em;
-    margin-top: 6%;
+    margin-top: 5%;
   }
   .belower p{
    max-width: 95%;
    margin-top: -5%;
    margin-bottom: -3%;
-   font-size: 0.6cm;
+   font-size: 0.5cm;
   }
 
   .belower img{
-    margin-top: -25%;
-    width: 140px;
-    margin-left: 55%;
+    margin-top: -2%;
+    width: 160px;
+    margin-left: 2%;
   }
 
   .last h4{
@@ -580,6 +587,10 @@ body{
 
   .last p{
     font-size: 0.7cm;
+    max-width: 85%;
   }
 }
+
+
+
 
